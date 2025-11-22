@@ -3,7 +3,6 @@ import joblib
 import json
 from sklearn.feature_extraction.text import CountVectorizer
 
-# Load spaCy English language model
 nlp = spacy.load("en_core_web_sm")
 
 # Load the trained model if it exists
