@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 nlp = spacy.load("en_core_web_sm")
 
-# Load the trained model if it exists
+
 try:
     model = joblib.load('chatbot/ml_model.pkl')
     vectorizer = joblib.load('chatbot/vectorizer.pkl')
