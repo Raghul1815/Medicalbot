@@ -10,12 +10,9 @@ try:
 except FileNotFoundError:
     model = None
     vectorizer = None
-
-# Analyze user input to extract intent using basic NLP techniques
 def analyze_input(user_input):
     doc = nlp(user_input.lower())
-    
-    # Define a simple rule-based intent recognition based on lemmas
+
     for token in doc:
         if token.lemma_ in ['hello', 'hi', 'hey']:
             return "greeting"
